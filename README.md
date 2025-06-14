@@ -1,11 +1,11 @@
 # D Flip-Flop using SystemVerilog
 
-This project demonstrates the design and simulation of a *D Flip-Flop* using SystemVerilog. It includes a simple and effective module for the D Flip-Flop along with a testbench to verify its behavior.
+This project demonstrates the design and simulation of a D Flip-Flop using SystemVerilog. It includes a simple and effective module for the D Flip-Flop along with a testbench to verify its behavior.
 
 ## 📁 Repository Contents
 
-- d_flip_flop.sv – D Flip-Flop design module  
-- tb_d_flip_flop.sv – Testbench to simulate and validate the design  
+- d-flipflop_design.sv – D Flip-Flop design module  
+- d-flipflop_testbench.sv – Testbench to simulate and validate the design  
 - README.md – Project documentation
 
 ## 🔧 Key Features
@@ -17,23 +17,23 @@ This project demonstrates the design and simulation of a *D Flip-Flop* using Sys
 
 ## ▶️ How to Simulate
 
-Make sure you have a SystemVerilog-compatible simulator like *Icarus Verilog* installed.
+Make sure you have a SystemVerilog-compatible simulator like Icarus Verilog installed.
 
-1. *Compile the files*:
-
-bash
-iverilog -g2012 -o dff_sim tb_d_flip_flop.sv d_flip_flop.sv
+1. Compile the files:
 
 
-2. *Run the simulation*:
+iverilog -g2012 -o dff_sim d-flipflop_testbench.sv d-flipflop_design.sv
 
-bash
+
+2. Run the simulation:
+
+
 vvp dff_sim
 
 
 ## 🧪 D Flip-Flop Behavior
 
-- On the *rising edge* of the clock, the output Q takes the value of the input D.  
+- On the rising edge of the clock, the output Q takes the value of the input D.  
 - If the clock does not toggle, the output remains unchanged.  
 
 ### Truth Table Example
@@ -46,4 +46,4 @@ vvp dff_sim
 
 
 
-Author: Divyadharshini J  
+Author: Divyadharshini J
